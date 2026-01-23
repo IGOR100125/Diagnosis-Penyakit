@@ -1,0 +1,219 @@
+{
+    "1": {
+        "nama": "Andi Pratama",
+        "usia": 25,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 1,
+        "diagnosis": "Flu"
+    },
+    "2": {
+        "nama": "Siti Aisyah",
+        "usia": 30,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 2,
+        "diagnosis": "Maag"
+    },
+    "3": {
+        "nama": "Budi Santoso",
+        "usia": 45,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 3,
+        "diagnosis": "Hipertensi Ringan"
+    },
+    "4": {
+        "nama": "Dewi Lestari",
+        "usia": 22,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 4,
+        "diagnosis": "Sakit Kepala"
+    },
+    "5": {
+        "nama": "Rizky Maulana",
+        "usia": 35,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 5,
+        "diagnosis": "Diare"
+    },
+    "6": {
+        "nama": "Ayu Puspitasari",
+        "usia": 28,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 6,
+        "diagnosis": "Alergi"
+    },
+    "7": {
+        "nama": "Fajar Hidayat",
+        "usia": 40,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 7,
+        "diagnosis": "Nyeri Sendi"
+    },
+    "8": {
+        "nama": "Nina Safitri",
+        "usia": 33,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 8,
+        "diagnosis": "Batuk Pilek"
+    },
+    "9": {
+        "nama": "Agus Setiawan",
+        "usia": 50,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 9,
+        "diagnosis": "Anemia"
+    },
+    "10": {
+        "nama": "Lina Marlina",
+        "usia": 27,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 10,
+        "diagnosis": "Migrain"
+    },
+    "11": {
+        "nama": "Doni Kurniawan",
+        "usia": 32,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 11,
+        "diagnosis": "Maag"
+    },
+    "12": {
+        "nama": "Putri Amalia",
+        "usia": 24,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 12,
+        "diagnosis": "Demam"
+    },
+    "13": {
+        "nama": "Hendra Wijaya",
+        "usia": 41,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 13,
+        "diagnosis": "GERD"
+    },
+    "14": {
+        "nama": "Rina Oktaviani",
+        "usia": 29,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 14,
+        "diagnosis": "Vertigo"
+    },
+    "15": {
+        "nama": "Bayu Saputra",
+        "usia": 36,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 15,
+        "diagnosis": "Pegal Otot"
+    },
+    "16": {
+        "nama": "Citra Dewi",
+        "usia": 26,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 16,
+        "diagnosis": "Radang Tenggorokan"
+    },
+    "17": {
+        "nama": "Eko Prasetyo",
+        "usia": 48,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 17,
+        "diagnosis": "Rematik Ringan"
+    },
+    "18": {
+        "nama": "Maya Sari",
+        "usia": 34,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 18,
+        "diagnosis": "ISPA"
+    },
+    "19": {
+        "nama": "Rahmat Hidayat",
+        "usia": 52,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 19,
+        "diagnosis": "Hipertensi Ringan"
+    },
+    "20": {
+        "nama": "Indah Permata",
+        "usia": 23,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 20,
+        "diagnosis": "Diare"
+    },
+    "21": {
+        "nama": "Yoga Pratama",
+        "usia": 31,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 21,
+        "diagnosis": "Flu"
+    },
+    "22": {
+        "nama": "Fitri Handayani",
+        "usia": 37,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 22,
+        "diagnosis": "Insomnia"
+    },
+    "23": {
+        "nama": "Arif Nugroho",
+        "usia": 44,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 23,
+        "diagnosis": "Asma Ringan"
+    },
+    "24": {
+        "nama": "Salsa Nabila",
+        "usia": 21,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 24,
+        "diagnosis": "Stres Ringan"
+    },
+    "25": {
+        "nama": "Dimas Setiawan",
+        "usia": 39,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 25,
+        "diagnosis": "Bronkitis Ringan"
+    },
+    "26": {
+        "nama": "Nabila Rahma",
+        "usia": 27,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 26,
+        "diagnosis": "Biduran"
+    },
+    "27": {
+        "nama": "Taufik Akbar",
+        "usia": 46,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 27,
+        "diagnosis": "Nyeri Sendi"
+    },
+    "28": {
+        "nama": "Sri Wahyuni",
+        "usia": 53,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 28,
+        "diagnosis": "Anemia"
+    },
+    "29": {
+        "nama": "Roni Saputra",
+        "usia": 34,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 29,
+        "diagnosis": "Kelelahan"
+    },
+    "30": {
+        "nama": "Amelia Putri",
+        "usia": 20,
+        "jenis_kelamin": "Perempuan",
+        "nomor_antrian": 30,
+        "diagnosis": "Gatal Kulit"
+    },
+    "31": {
+        "nama": "Ramadhan Oktarizaldi",
+        "usia": 20,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 31,
+        "diagnosis": "Sakit Kepala"
+    }
+}
