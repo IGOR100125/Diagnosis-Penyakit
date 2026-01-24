@@ -1,224 +1,179 @@
 def diagnosis_penyakit():
     penyakit = {
 
-        #Pernapasan & Infeksi
+        #Pernapasan
         "Flu": {
-            "gejala": ["demam", "batuk", "pilek"],
-            "saran": "Istirahat cukup dan minum air hangat",
+            "gejala": {
+                "demam": 3,
+                "batuk": 2,
+                "pilek": 2,
+                "nyeri otot": 1
+            },
+            "saran": "Istirahat cukup dan perbanyak cairan",
             "obat": ["Paracetamol", "Obat flu"]
         },
-        "Batuk Pilek": {
-            "gejala": ["batuk", "pilek"],
-            "saran": "Hindari udara dingin dan istirahat",
-            "obat": ["Obat batuk"]
+
+        "Covid-19 Ringan": {
+            "gejala": {
+                "demam": 3,
+                "batuk kering": 3,
+                "kehilangan penciuman": 4,
+                "lemas": 2
+            },
+            "saran": "Isolasi mandiri dan istirahat",
+            "obat": ["Paracetamol", "Vitamin C"]
         },
-        "Radang Tenggorokan": {
-            "gejala": ["sakit tenggorokan", "batuk"],
-            "saran": "Kumur air garam dan istirahat suara",
-            "obat": ["Obat pelega tenggorokan"]
-        },
+
         "ISPA": {
-            "gejala": ["batuk", "sesak napas"],
-            "saran": "Istirahat dan hindari asap rokok",
-            "obat": ["Obat batuk"]
-        },
-        "Asma Ringan": {
-            "gejala": ["sesak napas", "batuk"],
-            "saran": "Hindari pemicu asma",
-            "obat": ["Inhaler (jika ada)"]
-        },
-        "Sinusitis": {
-            "gejala": ["hidung tersumbat", "sakit kepala"],
-            "saran": "Uap hangat dan istirahat",
-            "obat": ["Obat flu"]
-        },
-        "Bronkitis Ringan": {
-            "gejala": ["batuk berdahak", "sesak"],
-            "saran": "Perbanyak cairan dan istirahat",
+            "gejala": {
+                "batuk": 2,
+                "sesak napas": 3,
+                "demam": 2
+            },
+            "saran": "Hindari asap rokok",
             "obat": ["Obat batuk"]
         },
 
-        #Demam & Infeksi umum
-        "Demam": {
-            "gejala": ["demam", "sakit kepala"],
-            "saran": "Kompres dan perbanyak cairan",
-            "obat": ["Paracetamol"]
-        },
-        "Demam Tinggi": {
-            "gejala": ["demam tinggi", "lemas"],
-            "saran": "Istirahat dan minum banyak cairan",
-            "obat": ["Paracetamol"]
-        },
-        "Tipes": {
-            "gejala": ["demam tinggi", "lemas", "mual"],
-            "saran": "Istirahat total dan cukup cairan",
-            "obat": ["Obat sesuai anjuran"]
-        },
-        "Demam Berdarah Ringan": {
-            "gejala": ["demam tinggi", "nyeri sendi"],
-            "saran": "Istirahat dan banyak minum",
-            "obat": ["Paracetamol"]
+        "Asma Ringan": {
+            "gejala": {
+                "sesak napas": 4,
+                "batuk": 2,
+                "dada terasa berat": 3
+            },
+            "saran": "Hindari pemicu asma",
+            "obat": ["Inhaler"]
         },
 
         #Pencernaan
         "Maag": {
-            "gejala": ["nyeri ulu hati", "mual"],
-            "saran": "Makan teratur dan hindari pedas",
+            "gejala": {
+                "nyeri ulu hati": 4,
+                "mual": 2,
+                "perut kembung": 1
+            },
+            "saran": "Makan teratur",
             "obat": ["Antasida"]
         },
-        "Gastritis": {
-            "gejala": ["nyeri lambung", "mual"],
-            "saran": "Hindari makanan asam dan pedas",
-            "obat": ["Antasida"]
-        },
-        "GERD": {
-            "gejala": ["dada panas", "mual"],
-            "saran": "Hindari makan sebelum tidur",
-            "obat": ["Antasida"]
-        },
+
         "Diare": {
-            "gejala": ["bab cair", "mual"],
-            "saran": "Minum oralit dan cukup cairan",
+            "gejala": {
+                "bab cair": 4,
+                "mual": 2,
+                "lemas": 2
+            },
+            "saran": "Minum oralit",
             "obat": ["Oralit"]
         },
+
         "Keracunan Makanan": {
-            "gejala": ["muntah", "diare", "bab cair"],
-            "saran": "Hentikan makanan pemicu dan hidrasi",
+            "gejala": {
+                "muntah": 4,
+                "diare": 3,
+                "sakit perut": 2
+            },
+            "saran": "Hentikan makanan pemicu",
             "obat": ["Oralit"]
         },
-        "Sembelit": {
-            "gejala": ["sulit bab", "perut kembung"],
-            "saran": "Perbanyak serat dan minum air",
-            "obat": ["Laksatif ringan"]
-        },
 
-        #Kepala dan Saraf
-        "Sakit Kepala": {
-            "gejala": ["pusing", "mual"],
-            "saran": "Istirahat dan kurangi aktivitas",
+        #Demam & darah
+        "Demam Berdarah Ringan": {
+            "gejala": {
+                "demam tinggi": 4,
+                "nyeri sendi": 3,
+                "bintik merah": 4
+            },
+            "saran": "Istirahat total dan banyak minum",
             "obat": ["Paracetamol"]
         },
-        "Migrain": {
-            "gejala": ["sakit kepala sebelah", "sensitif cahaya"],
-            "saran": "Istirahat di tempat gelap",
-            "obat": ["Paracetamol"]
-        },
-        "Vertigo": {
-            "gejala": ["pusing berputar", "mual"],
-            "saran": "Duduk atau berbaring",
-            "obat": ["Obat vertigo ringan"]
-        },
-        "Insomnia": {
-            "gejala": ["sulit tidur"],
-            "saran": "Atur jam tidur dan kurangi penggunaan gadget",
-            "obat": ["Suplemen"]
-        },
 
-        #Darah dan Tekanan Darah
         "Hipertensi Ringan": {
-            "gejala": ["pusing", "sakit kepala"],
+            "gejala": {
+                "pusing": 3,
+                "sakit kepala": 3,
+                "leher terasa kaku": 2
+            },
             "saran": "Kurangi garam dan stres",
             "obat": ["Obat sesuai anjuran"]
         },
+
         "Hipotensi": {
-            "gejala": ["lemas", "pusing"],
+            "gejala": {
+                "lemas": 3,
+                "pusing": 3,
+                "pandangan berkunang": 2
+            },
             "saran": "Bangun perlahan dan cukup cairan",
             "obat": ["Suplemen"]
         },
-        "Anemia": {
-            "gejala": ["lemas", "pucat"],
-            "saran": "Konsumsi makanan bergizi",
-            "obat": ["Suplemen zat besi"]
+
+        #Saraf
+        "Migrain": {
+            "gejala": {
+                "sakit kepala sebelah": 4,
+                "sensitif cahaya": 3,
+                "mual": 2
+            },
+            "saran": "Istirahat di tempat gelap",
+            "obat": ["Paracetamol"]
         },
 
-        #Kulit dan Alergi
+        "Vertigo": {
+            "gejala": {
+                "pusing berputar": 4,
+                "mual": 3,
+                "sulit berdiri": 2
+            },
+            "saran": "Duduk atau berbaring",
+            "obat": ["Obat vertigo"]
+        },
+
+        #Kulit
         "Alergi": {
-            "gejala": ["gatal", "bersin"],
-            "saran": "Hindari pemicu alergi",
+            "gejala": {
+                "gatal": 3,
+                "bersin": 2,
+                "ruam": 2
+            },
+            "saran": "Hindari pemicu",
             "obat": ["Antihistamin"]
         },
-        "Biduran": {
-            "gejala": ["bentol", "gatal"],
-            "saran": "Hindari pemicu dan jaga kebersihan",
-            "obat": ["Antihistamin"]
-        },
-        "Gatal Kulit": {
-            "gejala": ["gatal"],
-            "saran": "Jaga kebersihan kulit",
-            "obat": ["Salep anti gatal"]
-        },
+
         "Eksim Ringan": {
-            "gejala": ["kulit kering", "gatal"],
+            "gejala": {
+                "kulit kering": 3,
+                "gatal": 3,
+                "kemerahan": 2
+            },
             "saran": "Gunakan pelembap",
             "obat": ["Salep kulit"]
-        },
-
-        #Otot dan Sendi
-        "Nyeri Sendi": {
-            "gejala": ["nyeri sendi", "kaku"],
-            "saran": "Istirahat dan kompres hangat",
-            "obat": ["Obat nyeri"]
-        },
-        "Rematik Ringan": {
-            "gejala": ["nyeri sendi", "bengkak"],
-            "saran": "Hindari aktivitas berat",
-            "obat": ["Obat nyeri"]
-        },
-        "Pegal Otot": {
-            "gejala": ["nyeri otot"],
-            "saran": "Peregangan ringan",
-            "obat": ["Obat nyeri"]
-        },
-        "Keseleo Ringan": {
-            "gejala": ["nyeri", "bengkak"],
-            "saran": "Istirahat dan kompres",
-            "obat": ["Obat nyeri"]
-        },
-
-        #Lainnya
-        "Dehidrasi": {
-            "gejala": ["haus", "lemas"],
-            "saran": "Minum air secara bertahap",
-            "obat": ["Oralit"]
-        },
-        "Kelelahan": {
-            "gejala": ["lemas", "mengantuk"],
-            "saran": "Istirahat cukup",
-            "obat": ["Suplemen"]
-        },
-        "Stres Ringan": {
-            "gejala": ["gelisah", "sulit tidur"],
-            "saran": "Relaksasi dan atur waktu istirahat",
-            "obat": ["Suplemen"]
         }
     }
 
-    input_pasien = input("Masukkan gejala yang dirasakan: ").lower()
-
-    gejala_pasien = []
-    for data in penyakit.values():
-        for g in data["gejala"]:
-            if g in input_pasien and g not in gejala_pasien:
-                gejala_pasien.append(g)
+    input_pasien = input("Masukkan gejala (pisahkan dengan koma): ").lower()
+    gejala_pasien = [g.strip() for g in input_pasien.split(",")]
 
     hasil = []
+
     for nama, data in penyakit.items():
-        cocok = set(gejala_pasien) & set(data["gejala"])
-        if cocok:
-            hasil.append((nama, len(cocok)))
+        skor = 0
+        for g in gejala_pasien:
+            if g in data["gejala"]:
+                skor += data["gejala"][g]
+
+        if skor > 0:
+            hasil.append((nama, skor))
 
     hasil.sort(key=lambda x: x[1], reverse=True)
 
     if hasil:
-        nama_penyakit = hasil[0][0]
+        nama_penyakit, skor = hasil[0]
         data = penyakit[nama_penyakit]
 
         print("\nKemungkinan penyakit:", nama_penyakit)
+        print("Skor kecocokan:", skor)
         print("Saran:", data["saran"])
         print("Obat:", ", ".join(data["obat"]))
         return nama_penyakit
     else:
         print("Penyakit tidak ditemukan")
         return "Tidak diketahui"
-
-

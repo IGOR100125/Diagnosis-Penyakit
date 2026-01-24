@@ -3,32 +3,34 @@ import os
 from diagnosisPenyakit import diagnosis_penyakit
 from dataPasienDummy import pasien
 from admin import aksesAdmin
-from save import saveDataPasien
+from saveAndRemove import saveDataPasien
 
 namaAdmin = "rama"
 passwordAdmin = "ramaganteng"
 adminAkses = [namaAdmin, passwordAdmin]
 
-def pilihanAdmin():
-    if pilihan == "admin":
-        print("Login sebagai admin")
-        inputNamaAdmin = input("Masukan nama:   ").lower()
-        inputPasswordAdmin = input("Masukan password:   ")
-        inputAdmin = [inputNamaAdmin, inputPasswordAdmin]
-        while inputAdmin == adminAkses:
-            return aksesAdmin()
-        print("Nama atau password salah!")
-        return pilihanAdmin()
-    elif pilihan == "pasien":
-        print("Daftar sebagai pasien")
-    else:
-        pilihanAdm = pilihanAdmin()
-        print(pilihanAdm)
+def pilihan_user():
+    while True:
+        pilihan = input("Masuk sebagai admin atau pasien? ").lower()
 
+        if pilihan == "admin":
+            print("\nLogin sebagai admin")
+            nama = input("Masukkan nama admin: ").lower()
+            password = input("Masukkan password: ")
 
-pilihan = input("Mau daftar sebagai pasien atau masuk sebagai admin?    ").lower()
-pilihanAdmins = pilihanAdmin()
-print(pilihanAdmins)
+            if [nama, password] == adminAkses:
+                return aksesAdmin()
+            else:
+                print("Nama atau password salah!\n")
+
+        elif pilihan == "pasien":
+            return 
+
+        else:
+            print("Pilihan tidak valid!\n")
+
+pilihanUser = pilihan_user()
+print(pilihanUser)
 
 def load_data():
     if not os.path.exists("data_pasien.json"):
@@ -47,11 +49,12 @@ print("Selamat Datang di Program Diagnosis Penyakit kecil-kecilan kami :)")
 print("Perlu diingat kami hanya mendiagnosa penyakit berdasarkan gejala")
 print("Mohon maaf apabila penyakit anda tidak dapat ditemukan, anda bisa periksa lebih lanjut ke Rumah sakit saja :)")
 
+print("\nDaftar sebagai pasien")
 nama = input("Masukkan nama pasien: ")
 usia = int(input("Masukkan usia pasien: "))
 
 while True:
-    jk = input("Masukkan jenis kelamin (L/P): ").strip().lower()
+    jk = input("Masukkan jenis kelamin (L/P): ").strip().lower() 
     if jk == "l":
         jenis_kelamin = "Laki-laki"
         break
@@ -81,6 +84,8 @@ save_data(data_pasien)
 print("\nData pasien berhasil disimpan")
 print("Nomor Antrian:", nomor_antrian_baru)
 print("Diagnosis:", hasil_diagnosis)
+print("Perlu diingat ini hanya diagnosa :)")
+print("Apabila gejala memburuk kami menyarankan untuk ke dokter langsung yaa")
 
 save_data_pasien = saveDataPasien()
 print(save_data_pasien)

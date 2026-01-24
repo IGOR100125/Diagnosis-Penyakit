@@ -215,5 +215,12 @@
         "jenis_kelamin": "Laki-laki",
         "nomor_antrian": 31,
         "diagnosis": "Sakit Kepala"
+    },
+    "32": {
+        "nama": "Rizaldi Lazuardi",
+        "usia": 20,
+        "jenis_kelamin": "Laki-laki",
+        "nomor_antrian": 32,
+        "diagnosis": "Nyeri Sendi"
     }
 }
