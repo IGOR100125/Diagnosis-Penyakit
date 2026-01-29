@@ -1,17 +1,21 @@
 import json
 import os
 from diagnosisPenyakit import diagnosis_penyakit
-from dataPasienDummy import pasien
 from admin import aksesAdmin
 from saveAndRemove import saveDataPasien
+
 
 namaAdmin = "rama"
 passwordAdmin = "ramaganteng"
 adminAkses = [namaAdmin, passwordAdmin]
 
+print("\nSelamat Datang di Program Diagnosis Penyakit kecil-kecilan kami")
+print("Perlu diingat kami hanya mendiagnosa penyakit berdasarkan gejala")
+print("Mohon maaf apabila penyakit anda tidak dapat ditemukan, anda bisa periksa lebih lanjut ke Rumah sakit saja :)")
+
 def pilihan_user():
     while True:
-        pilihan = input("Masuk sebagai admin atau pasien? ").lower()
+        pilihan = input("\nMasuk sebagai admin atau daftar sebagai pasien? ").lower()
 
         if pilihan == "admin":
             print("\nLogin sebagai admin")
@@ -45,12 +49,8 @@ def save_data(data):
 
 data_pasien = load_data()
 
-print("Selamat Datang di Program Diagnosis Penyakit kecil-kecilan kami :)")
-print("Perlu diingat kami hanya mendiagnosa penyakit berdasarkan gejala")
-print("Mohon maaf apabila penyakit anda tidak dapat ditemukan, anda bisa periksa lebih lanjut ke Rumah sakit saja :)")
-
 print("\nDaftar sebagai pasien")
-nama = input("Masukkan nama pasien: ")
+nama = input("Masukkan nama lengkap pasien: ")
 usia = int(input("Masukkan usia pasien: "))
 
 while True:
