@@ -11,18 +11,19 @@ def load_data():
     df.to_csv('data_pasien.csv', index=False)
 
     df = pd.read_csv("data_pasien.csv", header=None)
+
     df_rapi = df.T
     df_rapi.columns = ["No", "Nama", "Umur", "Jenis Kelamin", "Antrian", "Diagnosa Penyakit"]
+    
     df_rapi = df_rapi.iloc[:, 1:]
 
     return df_rapi
-
 
 def aksesAdmin():
     while True:
         df_rapi = load_data()
 
-        print("\nADMIN TELAH DATANG")
+        print("\nSELAMAT DATANG ADMIN")
         print("1. Menghapus data pasien terakhir")
         print("2. Menghitung total pasien")
         print("3. Mencari data pasien")
@@ -62,9 +63,8 @@ def aksesAdmin():
                     print("\nData tidak ditemukan")
 
                 input("\nTekan ENTER untuk kembali ke menu...")
-
             case 4:
-                print("\nANALISIS DATA")
+                print("\nHASIL ANALISIS DATA")
 
                 arr_diagnosis = df_rapi["Diagnosa Penyakit"].to_numpy()
                 counts_diagnosis = Counter(arr_diagnosis)
@@ -85,11 +85,8 @@ def aksesAdmin():
                 print(f"Total pasien: {len(arr_umur)}")
 
                 input("\nTekan ENTER untuk kembali ke menu...")
-
             case 0:
                 print("\nKeluar dari program")
                 exit()
-
             case _:
                 print("Pilihan tidak valid!")
-
