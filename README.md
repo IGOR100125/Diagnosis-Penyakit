@@ -165,7 +165,7 @@ Dengan menggunakan **Pandas DataFrame**, data dapat diproses untuk berbagai kebu
 1. Clone repository
 
 ```bash
-git clone 
+git clone https://github.com/IGOR100125/Diagnosis-Penyakit
 ```
 
 2. Masuk ke folder proyek
